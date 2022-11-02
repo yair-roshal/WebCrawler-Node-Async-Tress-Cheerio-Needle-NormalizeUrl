@@ -1,0 +1,30 @@
+{
+	"private": false,
+	"name": "web-crawler",
+	"version": "0.0.1",
+	"description": "webCrawler",
+	"main": "server.js",
+	"author": "Yair",
+	"license": "WTFPL",
+	"scripts": {
+		"start": "nodemon server.js",
+		"start-deb": "set DEBUG=myDeb & nodemon server.js",
+		"start-deb2": "set DEBUG=myDeb2 & nodemon server.js",
+		"start-deb-all": "set DEBUG=* & nodemon server.js",
+		"start-deb1-deb2": "set DEBUG=myDeb,myDeb2 & nodemon server.js",
+		"start3": "set DEBUG=myDeb2 & nodemon index_sent.js"
+	},
+	"dependencies": {
+		"async": "^3.2.4",
+		"cheerio": "^0.20.0",
+		"debug": "^4.3.4",
+		"eslint": "^8.24.0",
+		"needle": "^1.0.0",
+		"nodemon": "^2.0.3",
+		"normalize-url": "^4.0.0",
+		"tress": "^1.0.0"
+	},
+	"devDependencies": {
+		"eslint-plugin-react": "^7.31.8"
+	}
+}
